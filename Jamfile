@@ -1,0 +1,3 @@
+Main myprog : first.c firsthead.h;
+LinkLibraries myprog : libtree ;     
+Library libtree : second.c ;
