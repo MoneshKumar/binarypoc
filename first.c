@@ -1,18 +1,3 @@
-/* add.c
-     * a simple C program
-     */
-
-    #include <stdio.h>
-    #define LAST 10
-      
-    int main()
-    {
-        int i, sum = 0;
-       
-        for ( i = 1; i <= LAST; i++ ) {
-          sum += i;
-        } /*-for-*/
-        printf("sum = %d\n", sum);
-
-        return 0;
-    }
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7b61da87a96ffe7d14b6672e18a0f0d143e82a957920e841c30f648ea06b753
+size 287
