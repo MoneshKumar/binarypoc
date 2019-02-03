@@ -1,4 +1,5 @@
 import re
+import os
 
 files_list = []
 file_ext_list = ['.c', '.h']
@@ -17,4 +18,6 @@ except IOError as e :
 
 print(files_list)
 
-
+for lfsfile in files_list:
+  print("git lfs track '"+lfsfile+"'")
+  os.system("git lfs track '"+lfsfile+"'")
