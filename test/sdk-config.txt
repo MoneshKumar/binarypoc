@@ -1,0 +1,54 @@
+VALID_ARCHS: default,x86_64,arm
+
+VALID_VM_TYPES: host,xr,sysadmin
+
+# Lindt Usage:
+#  yes  - Is used for Lindt builds (and Full XR)
+#         This is the default if the (optional) 'LINDT' key is omitted
+#  no   - Is NOT used for Lindt builds (but may be used for Full XR)
+#  only - Is ONLY used for Lindt builds (and is NOT used for Full XR)
+VALID_LINDT_USAGE: yes,no,only
+
+######################################################
+# User modifiable sections:
+#
+# OS-INFRA-SDK
+
+
+
+
+SDK: os-infra-sdk
+PLATFORM: ncs1k
+ARCH: x86_64
+VM_TYPE: xr,host
+SYS_ROOT: thirdparty/opensource/sdk
+ROOT_FS : thirdparty/opensource/sdk
+COMP_PATH: thirdparty/opensource/release
+SDK_FILE: mybin2.tgz
+REF_POINT: tp-xspeed/10
+BASE_REL: /auto/exr-yocto/SDK/WRL7/EXR/REL0102
+OVERWRITE:
+
+SDK: os-infra-sdk
+PLATFORM: ncs1k
+ARCH: x86_64
+VM_TYPE: sysadmin
+SYS_ROOT: os-infra-sdk
+ROOT_FS : thirdparty/opensource/sdk
+COMP_PATH: thirdparty/opensource/release
+SDK_FILE: mybin2.tgz
+REF_POINT: tp-xspeed/10
+BASE_REL: /auto/exr-yocto/SDK/WRL7/EXR/REL0102
+OVERWRITE:
+
+SDK: os-infra-sdk
+PLATFORM: ncs1k
+ARCH: x86_64
+VM_TYPE: sysadmin
+SYS_ROOT: os-infra-sdk
+ROOT_FS : thirdparty/opensource/sdk
+COMP_PATH: thirdparty/opensource/release
+SDK_FILE: mybin22.tgz
+REF_POINT: tp-xspeed/10
+BASE_REL: /auto/exr-yocto/SDK/WRL7/EXR/REL0102
+OVERWRITE:
